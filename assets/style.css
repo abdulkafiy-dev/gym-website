@@ -379,3 +379,82 @@ main > video
    }
    
 }
+
+/* ===== Responsive Update for .feature Section ===== */
+
+@media screen and (max-width: 992px) {
+  .grid-container {
+    grid-template-columns: 1fr;
+    padding: 0 40px;
+  }
+
+  .grid-container > * {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .text-cnt {
+    text-align: center;
+    margin-left: 0;
+    font-size: 14px;
+  }
+
+  .text-cnt > h3 {
+    font-size: 16px;
+  }
+
+  .text-cnt > p {
+    font-size: 14px;
+  }
+
+  .feature {
+    padding: 40px 20px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .feature > .feature-content > h2 {
+    font-size: 24px;
+  }
+
+  .feature-content {
+    padding-top: 30px;
+  }
+
+  .grid-container {
+    grid-gap: 20px;
+    padding: 0 20px;
+  }
+
+  .img-cnt {
+    width: 60px;
+    margin: 0 auto 10px;
+  }
+
+  .feature p {
+    font-size: 14px;
+    line-height: 1.5;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .feature {
+    padding: 30px 10px;
+  }
+
+  .feature > .feature-content > h2 {
+    font-size: 20px;
+  }
+
+  .grid-container {
+    padding: 0 10px;
+  }
+
+  .text-cnt {
+    font-size: 13px;
+  }
+
+  .feature-content p {
+    font-size: 13px;
+  }
+}
